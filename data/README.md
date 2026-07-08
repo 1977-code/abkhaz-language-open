@@ -27,7 +27,7 @@ their own licenses: **[../ATTRIBUTION.md](../ATTRIBUTION.md)**. Regeneration scr
 - **per_million** — occurrences normalized per 1,000,000 tokens (comparable across sources).
 - **pos** — dominant part of speech for the lemma (ABNC POS layer).
 - **n_wordforms** — number of distinct surface forms folded into the lemma (ABNC POS layer).
-- **source_id** — internal provenance id (traced in `../02_research_inventory/` of the project).
+- **source_id** — internal provenance id (tracked in the project's internal research inventory).
 
 ## Notes & limitations
 
