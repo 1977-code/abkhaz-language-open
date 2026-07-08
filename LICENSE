@@ -19,15 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-NOTE ON SCOPE
-This MIT license applies to the SOURCE CODE in this repository (corpus scripts
-under 06_corpus/scripts/, the website under 09_platform/, and other code).
-
-Educational CONTENT (lessons, methodology, language-standard docs) is licensed
-under CC BY 4.0 — see CONTENT-LICENSE.md.
-Aggregated DATA (frequency CSVs, metadata) is released under CC0 1.0 — see
-DATA-LICENSE.md.
-Third-party source materials are used under their own licenses and are NOT
-relicensed here — see ATTRIBUTION.md.
