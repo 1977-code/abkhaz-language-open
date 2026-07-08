@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Гайд для редактора-носителя — рабочий документ открытого проекта «Абхазский язык».">
+    <meta name="theme-color" content="#122019">
+    <title>Гайд для редактора-носителя — Абхазский язык</title>
+    <link rel="canonical" href="https://abkh.vercel.app/docs/native-review-guide.html">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23123524'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='34' fill='%23ffffff' text-anchor='middle'%3E%D0%90%D2%A7%3C/text%3E%3C/svg%3E">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Гайд для редактора-носителя — Абхазский язык">
+    <meta property="og:url" content="https://abkh.vercel.app/docs/native-review-guide.html">
+    <meta property="og:image" content="https://abkh.vercel.app/assets/abkhaz-language-hero.jpg">
+    <meta property="og:locale" content="ru_RU">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+      :root {
+        --ink: #18211c;
+        --muted: #627068;
+        --line: #d8dfda;
+        --paper: #f7f9f6;
+        --white: #ffffff;
+        --forest: #1d5f43;
+        --forest-dark: #123524;
+        --soft-green: #e7f0ea;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: var(--paper);
+        line-height: 1.65;
+      }
+      .topbar {
+        background: var(--forest-dark);
+        color: var(--white);
+      }
+      .topbar-shell {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 0 20px;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .topbar a { color: var(--white); text-decoration: none; font-weight: 700; font-size: 14px; }
+      .topbar a:hover { text-decoration: underline; text-underline-offset: 4px; }
+      .brand-mini { display: inline-flex; gap: 9px; align-items: baseline; }
+      .brand-mini .ru { opacity: .75; font-weight: 600; font-size: 13px; }
+      main {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 42px 20px 72px;
+        overflow-wrap: anywhere;
+      }
+      h1 { font-size: 40px; line-height: 1.1; margin: 8px 0 18px; text-wrap: balance; }
+      h2 { font-size: 26px; line-height: 1.2; margin: 38px 0 12px; }
+      h3 { font-size: 19px; margin: 28px 0 10px; }
+      p, ul, ol { margin: 0 0 14px; }
+      li { margin-bottom: 6px; }
+      a { color: var(--forest); text-underline-offset: 3px; }
+      code {
+        background: var(--soft-green);
+        border-radius: 4px;
+        padding: 1px 6px;
+        font-size: .9em;
+      }
+      pre { background: var(--soft-green); border-radius: 8px; padding: 14px 16px; overflow-x: auto; }
+      pre code { background: none; padding: 0; }
+      blockquote {
+        margin: 0 0 14px;
+        padding: 2px 18px;
+        border-left: 3px solid var(--forest);
+        color: var(--muted);
+        background: var(--white);
+        border-radius: 0 8px 8px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 0 18px;
+        background: var(--white);
+        border: 1px solid var(--line);
+        font-size: 14.5px;
+        display: block;
+        overflow-x: auto;
+      }
+      th, td { border: 1px solid var(--line); padding: 9px 12px; text-align: left; vertical-align: top; }
+      th { background: var(--soft-green); font-weight: 700; }
+      hr { border: 0; border-top: 1px solid var(--line); margin: 30px 0; }
+      .doc-footer {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 22px 20px 48px;
+        color: var(--muted);
+        font-size: 13.5px;
+        border-top: 1px solid var(--line);
+      }
+      .doc-footer a { color: var(--forest); }
+      @media (max-width: 640px) {
+        h1 { font-size: 30px; }
+        h2 { font-size: 22px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-shell">
+        <a class="brand-mini" href="/"><span>Аҧсуа</span><span class="ru">Абхазский язык</span></a>
+        <a href="/#documents">← Все документы</a>
+      </div>
+    </header>
+    <main>
+<h1>Гайд для редактора-носителя</h1>
+<h2>Цель проверки</h2>
+<p>Проверить не только &quot;правильно/неправильно&quot;, а звучит ли материал естественно для живого абхазского языка и подходит ли он уровню начинающего.</p>
+<h2>Что проверять</h2>
+<table>
+<thead>
+<tr>
+<th>Блок</th>
+<th>Вопросы</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Диалоги</td>
+<td>Так действительно говорят? Не звучит ли книжно? Подходит ли ситуация?</td>
+</tr>
+<tr>
+<td>Формулы</td>
+<td>Есть ли более естественный вариант? Есть ли разница между вежливым и нейтральным стилем?</td>
+</tr>
+<tr>
+<td>Лексика</td>
+<td>Это частотное слово? Нет ли регионального/диалектного ограничения?</td>
+</tr>
+<tr>
+<td>Произношение</td>
+<td>Какие звуки особенно сложно объяснить русскоговорящему?</td>
+</tr>
+<tr>
+<td>Культура</td>
+<td>Нет ли неуместных примеров, странных имен, неловких семейных или социальных сценариев?</td>
+</tr>
+<tr>
+<td>Диалекты</td>
+<td>Это литературная норма, разговорный вариант или диалектная форма?</td>
+</tr>
+</tbody></table>
+<h2>Метки проверки</h2>
+<table>
+<thead>
+<tr>
+<th>Метка</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>approved</code></td>
+<td>можно использовать</td>
+</tr>
+<tr>
+<td><code>approved_with_note</code></td>
+<td>можно использовать, но нужна помета</td>
+</tr>
+<tr>
+<td><code>rewrite</code></td>
+<td>нужно переписать</td>
+</tr>
+<tr>
+<td><code>unnatural</code></td>
+<td>грамматически возможно, но так не говорят</td>
+</tr>
+<tr>
+<td><code>dialectal</code></td>
+<td>форма диалектная, нужна маркировка</td>
+</tr>
+<tr>
+<td><code>too_advanced</code></td>
+<td>рано для A0-A2</td>
+</tr>
+<tr>
+<td><code>ask_scientific_editor</code></td>
+<td>нужен научный редактор</td>
+</tr>
+</tbody></table>
+<h2>Формат комментария</h2>
+<pre><code class="language-yaml">item_id:
+current_text:
+status:
+suggested_text:
+why:
+register: neutral | polite | colloquial | literary | dialectal
+dialect_note:
+audio_note:
+reviewer:
+date:
+</code></pre>
+<h2>Что нельзя требовать от носителя</h2>
+<ul>
+<li>Полностью писать учебник за автора.</li>
+<li>Принимать спорные научные решения в одиночку.</li>
+<li>Давать &quot;единственно правильную&quot; форму там, где есть варианты.</li>
+<li>Подписывать разрешение на голос без ясного описания использования.</li>
+</ul>
+<h2>Пакет для первой проверки</h2>
+<p>Передать носителю:</p>
+<ul>
+<li><code>05_methodology/chapter_briefs/L00_SOUNDS_AND_WRITING.md</code></li>
+<li><code>05_methodology/chapter_briefs/L01_INTRODUCTIONS.md</code></li>
+<li><code>05_methodology/chapter_briefs/L02_SELF_COUNTRY_LANGUAGE.md</code></li>
+<li><code>08_textbook/chapters/L01_DRAFT.md</code></li>
+<li><code>08_textbook/chapters/L02_DRAFT.md</code></li>
+<li><code>07_audio/RECORDING_BRIEF_L00_L04.md</code></li>
+</ul>
+
+
+    </main>
+    <footer class="doc-footer">
+      Рабочий документ открытого проекта «Абхазский язык» · <a href="/">abkh.vercel.app</a> · исходник: <a href="/docs/native-review-guide.md">native-review-guide.md</a>
+      <span style="display:inline-flex;align-items:center;gap:7px;margin-left:6px">·
+        <a href="https://artspace1977.ru" target="_blank" rel="noopener noreferrer" title="сделано силами творческого сообщества 1977" style="display:inline-flex;align-items:center;gap:6px">сделано&nbsp;силами
+          <img src="/assets/logo-1977-dark.svg" alt="1977" style="height:14px;width:auto;vertical-align:middle">
+        </a>
+      </span>
+    </footer>
+  </body>
+</html>

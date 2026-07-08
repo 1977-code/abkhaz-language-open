@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Открытые данные проекта — рабочий документ открытого проекта «Абхазский язык».">
+    <meta name="theme-color" content="#122019">
+    <title>Открытые данные проекта — Абхазский язык</title>
+    <link rel="canonical" href="https://abkh.vercel.app/docs/open-data.html">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23123524'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='34' fill='%23ffffff' text-anchor='middle'%3E%D0%90%D2%A7%3C/text%3E%3C/svg%3E">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Открытые данные проекта — Абхазский язык">
+    <meta property="og:url" content="https://abkh.vercel.app/docs/open-data.html">
+    <meta property="og:image" content="https://abkh.vercel.app/assets/abkhaz-language-hero.jpg">
+    <meta property="og:locale" content="ru_RU">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+      :root {
+        --ink: #18211c;
+        --muted: #627068;
+        --line: #d8dfda;
+        --paper: #f7f9f6;
+        --white: #ffffff;
+        --forest: #1d5f43;
+        --forest-dark: #123524;
+        --soft-green: #e7f0ea;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: var(--paper);
+        line-height: 1.65;
+      }
+      .topbar {
+        background: var(--forest-dark);
+        color: var(--white);
+      }
+      .topbar-shell {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 0 20px;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .topbar a { color: var(--white); text-decoration: none; font-weight: 700; font-size: 14px; }
+      .topbar a:hover { text-decoration: underline; text-underline-offset: 4px; }
+      .brand-mini { display: inline-flex; gap: 9px; align-items: baseline; }
+      .brand-mini .ru { opacity: .75; font-weight: 600; font-size: 13px; }
+      main {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 42px 20px 72px;
+        overflow-wrap: anywhere;
+      }
+      h1 { font-size: 40px; line-height: 1.1; margin: 8px 0 18px; text-wrap: balance; }
+      h2 { font-size: 26px; line-height: 1.2; margin: 38px 0 12px; }
+      h3 { font-size: 19px; margin: 28px 0 10px; }
+      p, ul, ol { margin: 0 0 14px; }
+      li { margin-bottom: 6px; }
+      a { color: var(--forest); text-underline-offset: 3px; }
+      code {
+        background: var(--soft-green);
+        border-radius: 4px;
+        padding: 1px 6px;
+        font-size: .9em;
+      }
+      pre { background: var(--soft-green); border-radius: 8px; padding: 14px 16px; overflow-x: auto; }
+      pre code { background: none; padding: 0; }
+      blockquote {
+        margin: 0 0 14px;
+        padding: 2px 18px;
+        border-left: 3px solid var(--forest);
+        color: var(--muted);
+        background: var(--white);
+        border-radius: 0 8px 8px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 0 18px;
+        background: var(--white);
+        border: 1px solid var(--line);
+        font-size: 14.5px;
+        display: block;
+        overflow-x: auto;
+      }
+      th, td { border: 1px solid var(--line); padding: 9px 12px; text-align: left; vertical-align: top; }
+      th { background: var(--soft-green); font-weight: 700; }
+      hr { border: 0; border-top: 1px solid var(--line); margin: 30px 0; }
+      .doc-footer {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 22px 20px 48px;
+        color: var(--muted);
+        font-size: 13.5px;
+        border-top: 1px solid var(--line);
+      }
+      .doc-footer a { color: var(--forest); }
+      @media (max-width: 640px) {
+        h1 { font-size: 30px; }
+        h2 { font-size: 22px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-shell">
+        <a class="brand-mini" href="/"><span>Аҧсуа</span><span class="ru">Абхазский язык</span></a>
+        <a href="/#documents">← Все документы</a>
+      </div>
+    </header>
+    <main>
+<h1>Открытые данные проекта</h1>
+<p>Проект публикует агрегированные частотные данные абхазского языка, построенные из открытых источников. Это рабочие материалы: они ещё не проверены лексикографом и носителями и не являются «учебным ядром» — но уже могут быть полезны исследователям и разработчикам.</p>
+<h2>Частотные списки</h2>
+<table>
+<thead>
+<tr>
+<th>Файл</th>
+<th>Источник</th>
+<th>Что внутри</th>
+<th>Лицензия данных</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="../data/freq_abnc_lemma_v1.csv">freq_abnc_lemma_v1.csv</a></td>
+<td><a href="https://clarino.uib.no/abnc">Abkhaz National Corpus</a>, 10,8 млн словоупотреблений</td>
+<td>4921 <strong>лемма</strong> с частотами (топ-5000 минус не-кириллический шум)</td>
+<td>CC0 (CLARIN PUB)</td>
+</tr>
+<tr>
+<td><a href="../data/freq_cv_pool_v0.csv">freq_cv_pool_v0.csv</a></td>
+<td>пул предложений <a href="https://commonvoice.mozilla.org/ab">Common Voice</a> (1,05 млн предложений)</td>
+<td>топ-5000 словоформ; литературно-диалоговый регистр (переводная проза и предложения для начитки, не спонтанная речь)</td>
+<td>CC0</td>
+</tr>
+<tr>
+<td><a href="../data/freq_abwiki_v0.csv">freq_abwiki_v0.csv</a></td>
+<td><a href="https://ab.wikipedia.org">абхазская Википедия</a> (34 тыс. статей)</td>
+<td>топ-3000 словоформ, энциклопедический регистр</td>
+<td>CC BY-SA 4.0</td>
+</tr>
+</tbody></table>
+<h2>Как это сделано</h2>
+<p>Все списки построены воспроизводимыми скриптами (Python, стандартная библиотека): из источников берётся текст, удаляется разметка, токены приводятся к нижнему регистру, грубо отфильтровываются русские вкрапления. В файлах — только агрегаты (слово, частота, частота на миллион); исходные тексты и предложения не перепубликуются.</p>
+<p>Известные ограничения каждого среза описаны в методических документах проекта: списки из Википедии и Common Voice — словоформы (не леммы), список ABNC — леммы по автоматическому морфоразбору. Полисинтетика абхазского делает лемматизацию нетривиальной: до проверки лексикографом данные стоит считать черновыми.</p>
+<p><strong>Как читать леммы ABNC:</strong> разметка корпуса сохраняет морфемную сегментацию дефисами и знак ударения (например, <code>а-ҳәа-ра́</code> — лемма с показанными границами морфем и ударением). Это не орфографическая словарная форма: для учебного словаря записи нормализуются лексикографом. Из опубликованного файла удалены строки без кириллической леммы (пунктуация и неразобранные токены исходной выгрузки).</p>
+<h2>Зачем это</h2>
+<ol>
+<li>Сверка трёх независимых срезов выделяет устойчивое высокочастотное ядро языка.</li>
+<li>Из ядра после проверки носителями строится учебный словарь A0–A2 (800–1200 единиц).</li>
+<li>Открытая публикация агрегатов — вклад проекта в цифровую экосистему абхазского языка.</li>
+</ol>
+<p>При использовании данных просим ссылаться на источники из таблицы; для списка по Википедии обязательна атрибуция CC BY-SA.</p>
+
+
+    </main>
+    <footer class="doc-footer">
+      Рабочий документ открытого проекта «Абхазский язык» · <a href="/">abkh.vercel.app</a> · исходник: <a href="/docs/open-data.md">open-data.md</a>
+      <span style="display:inline-flex;align-items:center;gap:7px;margin-left:6px">·
+        <a href="https://artspace1977.ru" target="_blank" rel="noopener noreferrer" title="сделано силами творческого сообщества 1977" style="display:inline-flex;align-items:center;gap:6px">сделано&nbsp;силами
+          <img src="/assets/logo-1977-dark.svg" alt="1977" style="height:14px;width:auto;vertical-align:middle">
+        </a>
+      </span>
+    </footer>
+  </body>
+</html>

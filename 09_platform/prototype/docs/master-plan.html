@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Мастер-план реализации — рабочий документ открытого проекта «Абхазский язык».">
+    <meta name="theme-color" content="#122019">
+    <title>Мастер-план реализации — Абхазский язык</title>
+    <link rel="canonical" href="https://abkh.vercel.app/docs/master-plan.html">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23123524'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='34' fill='%23ffffff' text-anchor='middle'%3E%D0%90%D2%A7%3C/text%3E%3C/svg%3E">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Мастер-план реализации — Абхазский язык">
+    <meta property="og:url" content="https://abkh.vercel.app/docs/master-plan.html">
+    <meta property="og:image" content="https://abkh.vercel.app/assets/abkhaz-language-hero.jpg">
+    <meta property="og:locale" content="ru_RU">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+      :root {
+        --ink: #18211c;
+        --muted: #627068;
+        --line: #d8dfda;
+        --paper: #f7f9f6;
+        --white: #ffffff;
+        --forest: #1d5f43;
+        --forest-dark: #123524;
+        --soft-green: #e7f0ea;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: var(--paper);
+        line-height: 1.65;
+      }
+      .topbar {
+        background: var(--forest-dark);
+        color: var(--white);
+      }
+      .topbar-shell {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 0 20px;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .topbar a { color: var(--white); text-decoration: none; font-weight: 700; font-size: 14px; }
+      .topbar a:hover { text-decoration: underline; text-underline-offset: 4px; }
+      .brand-mini { display: inline-flex; gap: 9px; align-items: baseline; }
+      .brand-mini .ru { opacity: .75; font-weight: 600; font-size: 13px; }
+      main {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 42px 20px 72px;
+        overflow-wrap: anywhere;
+      }
+      h1 { font-size: 40px; line-height: 1.1; margin: 8px 0 18px; text-wrap: balance; }
+      h2 { font-size: 26px; line-height: 1.2; margin: 38px 0 12px; }
+      h3 { font-size: 19px; margin: 28px 0 10px; }
+      p, ul, ol { margin: 0 0 14px; }
+      li { margin-bottom: 6px; }
+      a { color: var(--forest); text-underline-offset: 3px; }
+      code {
+        background: var(--soft-green);
+        border-radius: 4px;
+        padding: 1px 6px;
+        font-size: .9em;
+      }
+      pre { background: var(--soft-green); border-radius: 8px; padding: 14px 16px; overflow-x: auto; }
+      pre code { background: none; padding: 0; }
+      blockquote {
+        margin: 0 0 14px;
+        padding: 2px 18px;
+        border-left: 3px solid var(--forest);
+        color: var(--muted);
+        background: var(--white);
+        border-radius: 0 8px 8px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 0 18px;
+        background: var(--white);
+        border: 1px solid var(--line);
+        font-size: 14.5px;
+        display: block;
+        overflow-x: auto;
+      }
+      th, td { border: 1px solid var(--line); padding: 9px 12px; text-align: left; vertical-align: top; }
+      th { background: var(--soft-green); font-weight: 700; }
+      hr { border: 0; border-top: 1px solid var(--line); margin: 30px 0; }
+      .doc-footer {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 22px 20px 48px;
+        color: var(--muted);
+        font-size: 13.5px;
+        border-top: 1px solid var(--line);
+      }
+      .doc-footer a { color: var(--forest); }
+      @media (max-width: 640px) {
+        h1 { font-size: 30px; }
+        h2 { font-size: 22px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-shell">
+        <a class="brand-mini" href="/"><span>Аҧсуа</span><span class="ru">Абхазский язык</span></a>
+        <a href="/#documents">← Все документы</a>
+      </div>
+    </header>
+    <main>
+<h1>Мастер-план реализации</h1>
+<h2>1. Стратегическая цель</h2>
+<p>Создать современную систему изучения и сохранения абхазского языка для русскоговорящих: от абсолютного нуля до уверенного базового владения, с постепенным расширением до уровня <code>B1</code>.</p>
+<p>Ключевой принцип: проект не ограничивается книгой. Учебник должен стать центром экосистемы, куда входят аудио, словарь, корпус, сайт, упражнения, AI-тьютор, медиа и сеть носителей.</p>
+<h2>2. Продуктовая рамка</h2>
+<h3>Первый публичный продукт</h3>
+<p><code>MVP A1-A2</code>:</p>
+<ul>
+<li>10-12 учебных глав;</li>
+<li>60-80 диалогов;</li>
+<li>8-15 часов аудио;</li>
+<li>рабочая тетрадь;</li>
+<li>мини-грамматика;</li>
+<li>учебный словарь ядра;</li>
+<li>сайт-ридер с аудио, поиском и упражнениями;</li>
+<li>стартовый корпус очищенных учебных и медийных текстов.</li>
+</ul>
+<h3>Полный продукт</h3>
+<p><code>A0-B1</code>:</p>
+<ul>
+<li>30-36 уроков;</li>
+<li>расширенный аудиокурс;</li>
+<li>graded readers;</li>
+<li>корпусные примеры;</li>
+<li>диалектные приложения;</li>
+<li>тесты и контрольные задания;</li>
+<li>печатная версия;</li>
+<li>AI-тьютор поверх проверенных материалов.</li>
+</ul>
+<h2>3. Методический принцип</h2>
+<p>Курс строится по траектории:</p>
+<p><code>звук -&gt; буква -&gt; слово -&gt; фраза -&gt; диалог -&gt; грамматика -&gt; повторение -&gt; живая практика</code>.</p>
+<p>Для абхазского языка особенно важны:</p>
+<ul>
+<li>сильный фонетический модуль;</li>
+<li>раннее, но дозированное введение глагольных моделей;</li>
+<li>частотная лексика вместо случайного словаря;</li>
+<li>аудио в двух темпах;</li>
+<li>блоки типичных ошибок русскоговорящих;</li>
+<li>диалектные различия в справках, а не в основном потоке урока.</li>
+</ul>
+<h2>4. Норма курса</h2>
+<p>Базовая норма первого тома: литературный абхазский язык на абжуйской базе.</p>
+<p>Диалектные формы:</p>
+<ul>
+<li>не смешиваются с beginner-core;</li>
+<li>фиксируются в отдельных врезках;</li>
+<li>маркируются как <code>норма</code>, <code>вариант</code>, <code>диалектное</code>;</li>
+<li>расширяются отдельными приложениями после MVP.</li>
+</ul>
+<p>Подробное решение зафиксировано во внутреннем документе проекта (04_language_standard/NORM_DECISION.md).</p>
+<h2>5. Этапы</h2>
+<h3>Этап 1. Подготовка и проектная инфраструктура</h3>
+<p>Срок: 3-4 недели.</p>
+<p>Результаты:</p>
+<ul>
+<li>структура проекта;</li>
+<li>мастер-план;</li>
+<li>реестр источников;</li>
+<li>реестр прав;</li>
+<li>карта партнеров;</li>
+<li>решение по норме;</li>
+<li>проектный совет и роли;</li>
+<li>список ближайших действий.</li>
+</ul>
+<p>Статус: реализован в текущей папке проекта.</p>
+<h3>Этап 2. Методическое ядро</h3>
+<p>Срок: 6-8 недель.</p>
+<p>Результаты:</p>
+<ul>
+<li>syllabus <code>A0-A2</code>;</li>
+<li>частотный минимум 800-1200 слов;</li>
+<li>список 100-150 речевых формул;</li>
+<li>фонетический модуль;</li>
+<li>шаблон главы;</li>
+<li>правила терминологии и объяснений.</li>
+</ul>
+<h3>Этап 3. Пилотные главы</h3>
+<p>Срок: 6-8 недель.</p>
+<p>Результаты:</p>
+<ul>
+<li>главы 1-4;</li>
+<li>черновая рабочая тетрадь;</li>
+<li>пилотное аудио;</li>
+<li>тестирование на 10-20 русскоговорящих новичках;</li>
+<li>журнал ошибок и переработок.</li>
+</ul>
+<h3>Этап 4. MVP A1-A2</h3>
+<p>Срок: 4-5 месяцев.</p>
+<p>Результаты:</p>
+<ul>
+<li>10-12 глав;</li>
+<li>60-80 диалогов;</li>
+<li>8-15 часов аудио;</li>
+<li>упражнения и ключи;</li>
+<li>мини-грамматика;</li>
+<li>словарь курса;</li>
+<li>сайт-ридер;</li>
+<li>пилотная PDF/печатная версия.</li>
+</ul>
+<h3>Этап 5. Публичный запуск</h3>
+<p>Срок: 1-2 месяца.</p>
+<p>Результаты:</p>
+<ul>
+<li>бесплатная веб-версия первых глав;</li>
+<li>Telegram/YouTube с короткими уроками;</li>
+<li>набор карточек;</li>
+<li>форма обратной связи;</li>
+<li>первая учебная группа на 6-8 недель;</li>
+<li>партнерские переговоры.</li>
+</ul>
+<h3>Этап 6. Расширение до B1</h3>
+<p>Срок: 6-9 месяцев после MVP.</p>
+<p>Результаты:</p>
+<ul>
+<li>полный курс <code>A0-B1</code>;</li>
+<li>больше чтения и аудирования;</li>
+<li>культурные тексты;</li>
+<li>диалектные приложения;</li>
+<li>тесты уровня;</li>
+<li>подготовка печатного издания.</li>
+</ul>
+<h3>Этап 7. AI-тьютор</h3>
+<p>Запускать после появления:</p>
+<ul>
+<li>правочистого корпуса;</li>
+<li>утвержденной грамматической базы;</li>
+<li>словаря курса;</li>
+<li>аудиосета;</li>
+<li>проверенных уроков.</li>
+</ul>
+<p>Первая версия AI-тьютора должна быть узкой:</p>
+<ul>
+<li>объяснение грамматики курса;</li>
+<li>проверка упражнений;</li>
+<li>controlled dialogue;</li>
+<li>исправление типичных ошибок;</li>
+<li>помощь с произношением;</li>
+<li>поиск примеров в корпусе.</li>
+</ul>
+<h2>6. Риски</h2>
+<table>
+<thead>
+<tr>
+<th>Риск</th>
+<th>Почему важен</th>
+<th>Снижение риска</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Неясные права на PDF и медиа</td>
+<td>Нельзя безопасно публиковать и обучать AI</td>
+<td>Вести rights registry, получать письменные разрешения</td>
+</tr>
+<tr>
+<td>Перегруз грамматикой</td>
+<td>Новичок быстро бросит курс</td>
+<td>Пилотировать первые главы на людях без языкового фона</td>
+</tr>
+<tr>
+<td>Смешение нормы и диалектов</td>
+<td>Курс станет спорным и непоследовательным</td>
+<td>Зафиксировать literary core и диалектные врезки</td>
+</tr>
+<tr>
+<td>Недостаток аудио</td>
+<td>Абхазский нельзя учить только глазами</td>
+<td>Записывать собственное аудио с релизами от дикторов</td>
+</tr>
+<tr>
+<td>Нет частотного минимума</td>
+<td>Лексика будет случайной</td>
+<td>Сгенерировать учебный частотник из корпусов и ручной проверки</td>
+</tr>
+<tr>
+<td>AI-тьютор начат слишком рано</td>
+<td>Будет уверенно ошибаться</td>
+<td>Запускать только поверх проверенных материалов</td>
+</tr>
+</tbody></table>
+<h2>7. Ближайший следующий шаг</h2>
+<p>Перейти к этапу 2:</p>
+<ol>
+<li>собрать частотный минимум;</li>
+<li>утвердить syllabus <code>A0-A2</code>;</li>
+<li>подготовить фонетический модуль;</li>
+<li>начать главы 1-4;</li>
+<li>открыть переговоры по правам и партнерам.</li>
+</ol>
+
+
+    </main>
+    <footer class="doc-footer">
+      Рабочий документ открытого проекта «Абхазский язык» · <a href="/">abkh.vercel.app</a> · исходник: <a href="/docs/master-plan.md">master-plan.md</a>
+      <span style="display:inline-flex;align-items:center;gap:7px;margin-left:6px">·
+        <a href="https://artspace1977.ru" target="_blank" rel="noopener noreferrer" title="сделано силами творческого сообщества 1977" style="display:inline-flex;align-items:center;gap:6px">сделано&nbsp;силами
+          <img src="/assets/logo-1977-dark.svg" alt="1977" style="height:14px;width:auto;vertical-align:middle">
+        </a>
+      </span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<h1>Гайд для редактора-носителя</h1>
+<h2>Цель проверки</h2>
+<p>Проверить не только &quot;правильно/неправильно&quot;, а звучит ли материал естественно для живого абхазского языка и подходит ли он уровню начинающего.</p>
+<h2>Что проверять</h2>
+<table>
+<thead>
+<tr>
+<th>Блок</th>
+<th>Вопросы</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Диалоги</td>
+<td>Так действительно говорят? Не звучит ли книжно? Подходит ли ситуация?</td>
+</tr>
+<tr>
+<td>Формулы</td>
+<td>Есть ли более естественный вариант? Есть ли разница между вежливым и нейтральным стилем?</td>
+</tr>
+<tr>
+<td>Лексика</td>
+<td>Это частотное слово? Нет ли регионального/диалектного ограничения?</td>
+</tr>
+<tr>
+<td>Произношение</td>
+<td>Какие звуки особенно сложно объяснить русскоговорящему?</td>
+</tr>
+<tr>
+<td>Культура</td>
+<td>Нет ли неуместных примеров, странных имен, неловких семейных или социальных сценариев?</td>
+</tr>
+<tr>
+<td>Диалекты</td>
+<td>Это литературная норма, разговорный вариант или диалектная форма?</td>
+</tr>
+</tbody></table>
+<h2>Метки проверки</h2>
+<table>
+<thead>
+<tr>
+<th>Метка</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>approved</code></td>
+<td>можно использовать</td>
+</tr>
+<tr>
+<td><code>approved_with_note</code></td>
+<td>можно использовать, но нужна помета</td>
+</tr>
+<tr>
+<td><code>rewrite</code></td>
+<td>нужно переписать</td>
+</tr>
+<tr>
+<td><code>unnatural</code></td>
+<td>грамматически возможно, но так не говорят</td>
+</tr>
+<tr>
+<td><code>dialectal</code></td>
+<td>форма диалектная, нужна маркировка</td>
+</tr>
+<tr>
+<td><code>too_advanced</code></td>
+<td>рано для A0-A2</td>
+</tr>
+<tr>
+<td><code>ask_scientific_editor</code></td>
+<td>нужен научный редактор</td>
+</tr>
+</tbody></table>
+<h2>Формат комментария</h2>
+<pre><code class="language-yaml">item_id:
+current_text:
+status:
+suggested_text:
+why:
+register: neutral | polite | colloquial | literary | dialectal
+dialect_note:
+audio_note:
+reviewer:
+date:
+</code></pre>
+<h2>Что нельзя требовать от носителя</h2>
+<ul>
+<li>Полностью писать учебник за автора.</li>
+<li>Принимать спорные научные решения в одиночку.</li>
+<li>Давать &quot;единственно правильную&quot; форму там, где есть варианты.</li>
+<li>Подписывать разрешение на голос без ясного описания использования.</li>
+</ul>
+<h2>Пакет для первой проверки</h2>
+<p>Передать носителю:</p>
+<ul>
+<li><code>05_methodology/chapter_briefs/L00_SOUNDS_AND_WRITING.md</code></li>
+<li><code>05_methodology/chapter_briefs/L01_INTRODUCTIONS.md</code></li>
+<li><code>05_methodology/chapter_briefs/L02_SELF_COUNTRY_LANGUAGE.md</code></li>
+<li><code>08_textbook/chapters/L01_DRAFT.md</code></li>
+<li><code>08_textbook/chapters/L02_DRAFT.md</code></li>
+<li><code>07_audio/RECORDING_BRIEF_L00_L04.md</code></li>
+</ul>
+

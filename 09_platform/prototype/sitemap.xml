@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://abkh.vercel.app/</loc><lastmod>2026-06-11</lastmod><priority>1.0</priority></url>
+  <url><loc>https://abkh.vercel.app/en/</loc><lastmod>2026-06-11</lastmod><priority>0.9</priority></url>
+  <url><loc>https://abkh.vercel.app/docs/concept-note.html</loc><lastmod>2026-06-11</lastmod><priority>0.8</priority></url>
+  <url><loc>https://abkh.vercel.app/docs/master-plan.html</loc><lastmod>2026-06-11</lastmod><priority>0.8</priority></url>
+  <url><loc>https://abkh.vercel.app/docs/syllabus.html</loc><lastmod>2026-06-11</lastmod><priority>0.8</priority></url>
+  <url><loc>https://abkh.vercel.app/docs/native-review-guide.html</loc><lastmod>2026-06-11</lastmod><priority>0.6</priority></url>
+  <url><loc>https://abkh.vercel.app/docs/scientific-review-guide.html</loc><lastmod>2026-06-11</lastmod><priority>0.6</priority></url>
+  <url><loc>https://abkh.vercel.app/docs/pilot-protocol.html</loc><lastmod>2026-06-11</lastmod><priority>0.6</priority></url>
+  <url><loc>https://abkh.vercel.app/docs/rights-registry.html</loc><lastmod>2026-06-11</lastmod><priority>0.6</priority></url>
+  <url><loc>https://abkh.vercel.app/docs/recording-brief-l00-l04.html</loc><lastmod>2026-06-11</lastmod><priority>0.5</priority></url>
+  <url><loc>https://abkh.vercel.app/docs/lesson-data-schema.html</loc><lastmod>2026-06-11</lastmod><priority>0.5</priority></url>
+  <url><loc>https://abkh.vercel.app/docs/open-data.html</loc><lastmod>2026-06-12</lastmod><priority>0.7</priority></url>
+  <url><loc>https://abkh.vercel.app/docs/legal.html</loc><lastmod>2026-06-15</lastmod><priority>0.4</priority></url>
+</urlset>

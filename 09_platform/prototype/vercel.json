@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "https://abkhlang.ru/", "permanent": false },
+    { "source": "/en", "destination": "https://abkhlang.ru/en/", "permanent": false },
+    { "source": "/en/", "destination": "https://abkhlang.ru/en/", "permanent": false },
+    { "source": "/en/(.*)", "destination": "https://abkhlang.ru/en/", "permanent": false },
+    { "source": "/(.*)", "destination": "https://abkhlang.ru/", "permanent": false }
+  ]
+}

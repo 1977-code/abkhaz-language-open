@@ -1,0 +1,41 @@
+# abkhlang.ru — Apache (shared hosting)
+
+Options -Indexes
+DirectoryIndex index.php index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Принудительный HTTPS
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Чистые URL документов: /docs/<slug> → docs/index.php?p=<slug>
+  RewriteRule ^docs/([a-z0-9-]+)/?$ docs/index.php?p=$1 [L,QSA]
+</IfModule>
+
+# Заголовки безопасности
+<IfModule mod_headers.c>
+  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; img-src 'self' data:; style-src 'self'; script-src 'none'; object-src 'none'; upgrade-insecure-requests"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), geolocation=(), microphone=(), payment=(), usb=()"
+</IfModule>
+
+# Страницы ошибок
+ErrorDocument 404 /404.php
+
+# Защита служебных файлов
+<FilesMatch "\.(md|fragment\.html|sh)$">
+  Require all denied
+</FilesMatch>
+RedirectMatch 404 ^/inc/
+
+# Кэш статики
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType text/css "access plus 7 days"
+</IfModule>
