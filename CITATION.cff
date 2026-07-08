@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this data or course material, please cite it as below."
+title: "Abkhaz Language — Open Course & Language Data"
+abstract: >-
+  Open, reproducible frequency data and an A0–A2 course for Abkhaz (аҧсуа бызшәа),
+  a Northwest Caucasian language listed as vulnerable by UNESCO. Frequency data is
+  derived from open corpora (Abkhaz National Corpus, Mozilla Common Voice, Abkhaz
+  Wikipedia) and released as CC0; course content is CC BY 4.0; code is MIT.
+type: dataset
+authors:
+  - name: "Abkhaz Language Project"
+    website: "https://abkhlang.ru"
+repository-code: "https://github.com/1977-code/abkhaz-language-open"
+url: "https://github.com/1977-code/abkhaz-language-open"
+license:
+  - MIT
+  - CC-BY-4.0
+  - CC0-1.0
+keywords:
+  - Abkhaz
+  - endangered languages
+  - low-resource languages
+  - corpus linguistics
+  - frequency list
+  - language preservation
+  - CEFR
+version: "0.1.0"
+date-released: "2026-07-08"
